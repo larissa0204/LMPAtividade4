@@ -55,10 +55,8 @@
 		 <h1 class="text-warning">o texto vai ficar amarelo <c:out value= "${var}"/></h1>
 		</c:if>
      
-      
-      
-      
- 
+           
+
 
  
 </body>
