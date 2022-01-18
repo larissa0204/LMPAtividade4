@@ -8,6 +8,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link href="webjars/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 <%! 
@@ -15,8 +17,7 @@
 	java.text.SimpleDateFormat dt = new java.text.SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
 	return dt.format(new java.util.Date());
 	} 
-	%>
-	 
+%>
 	 
 	 <c:set var="variavel" value="Testando pagina JSP utilizando JSTL"/> 
 	 <c:out value="${variavel} "/>
@@ -36,10 +37,28 @@
  								</c:otherwise>
  							</c:choose></h1>
  		
+ 	<c:set var="nome" value="Primeira Pagina JSP utlizando JSTL"/>
  	
- 		
+ 	
  
-
+ 	
+ 	
+ 	
+ 	<h1 class="text-warning">  vou contar até 5</h1>
+    <c:forEach var = "i" begin = "1" end = "5">
+         Item <c:out value = "${i}"/><p>
+      </c:forEach>
+      
+      <c:set var="var" value= "2"/>
+      
+     <c:if test="${var < 5}">
+		 <h1 class="text-warning">o texto vai ficar amarelo <c:out value= "${var}"/></h1>
+		</c:if>
+     
+      
+      
+      
+ 
 
  
 </body>
